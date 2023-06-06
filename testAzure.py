@@ -1,9 +1,9 @@
 import requests, uuid, json
 
 def translate_text(text):
-    key = "85f2b012ef1a43ccbb61b9db7ff38a2c"
-    endpoint = "https://api.cognitive.microsofttranslator.com"
-    location = "eastus2"
+    key = ""
+    endpoint = ""
+    location = ""
 
     path = '/translate'
     constructed_url = endpoint + path
