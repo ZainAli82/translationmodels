@@ -1,7 +1,7 @@
 import requests
 
-api_url = 'https://translate.yandex.net/api/v1.5/tr.json/translate'
-api_key = 'trnsl.1.1.20230317T175938Z.2a7206f762410d4e.6903edb875127dc89a95f6822eed0ad9718ae5d5'
+api_url = ''
+api_key = ''
 
 translation_direction = 'ur-en' 
 text_format = 'plain' 
