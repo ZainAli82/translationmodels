@@ -1,5 +1,6 @@
 import requests
 
+# add credidentials
 api_url = ''
 api_key = ''
 
