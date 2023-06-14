@@ -4,6 +4,7 @@ import boto3
 import six
 from google.cloud import translate_v2 as translate
 
+# add credidentials
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ""
 
 def translate_text(target, text):
