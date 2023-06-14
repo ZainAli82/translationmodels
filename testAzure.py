@@ -1,6 +1,7 @@
 import requests, uuid, json
 
 def translate_text(text):
+    # Enter cred values
     key = ""
     endpoint = ""
     location = ""
