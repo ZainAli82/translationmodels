@@ -1,8 +1,11 @@
 import requests
+from decouple import Config
 
-# add credidentials
-api_url = ''
-api_key = ''
+config = Config()
+config.read_dotenv()
+
+api_url = config.get('YANDEX_API_URL')
+api_key = config.get('YANDEX_API_KEY')
 
 translation_direction = 'ur-en' 
 text_format = 'plain' 

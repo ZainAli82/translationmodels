@@ -3,9 +3,16 @@ import os
 import boto3
 import six
 from google.cloud import translate_v2 as translate
+import requests
+from decouple import Config
+
+config = Config()
+config.read_dotenv()
+
+google_creds = config.get('GOOGLE_JSON_PATH')
 
 # add credidentials
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ""
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = google_creds
 
 def translate_text(target, text):
     translate_client = translate.Client()

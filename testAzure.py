@@ -1,11 +1,15 @@
 import requests, uuid, json
 
-def translate_text(text):
-    # Enter cred values
-    key = ""
-    endpoint = ""
-    location = ""
+from decouple import Config
 
+config = Config()
+config.read_dotenv()
+
+key = config.get('AZURE_KEY')
+endpoint = config.get('AZURE_ENDPOINT')
+location = config.get('AZURE_LOC')
+
+def translate_text(text):
     path = '/translate'
     constructed_url = endpoint + path
 
